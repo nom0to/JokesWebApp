@@ -22,9 +22,7 @@ namespace JokesWebApp.Controllers
         // GET: Jokes
         public async Task<IActionResult> Index()
         {
-              return _context.Joke != null ? 
-                          View(await _context.Joke.ToListAsync()) :
-                          Problem("Entity set 'ApplicationDbContext.Joke'  is null.");
+              return 
         }
 
         // GET: Jokes/Details/5
